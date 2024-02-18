@@ -6,69 +6,18 @@ export const characterAssistant: CreateAssistantDTO = {
     provider: "groq",
     model: "mixtral-8x7b-32768",
     temperature: 0.7,
-    systemPrompt:
-      "You're Grocky, an AI assistant. You answer any question as long as the information was available at the time of training. Allow the user to probe for more details only if they want them. keep your answers very terse.",
-    // functions: [
-    //     {
-    //     name: "finalizeDetail",
-    //     description:
-    //       "Each time a detail has been finalized, this function should be called so that the author can be informed about the same.",
-    //     parameters: {
-    //       type: "object",
-    //       properties: {
-    //         key: {
-    //           type: "string",
-    //           description:
-    //             "This is the key or detail for which the values have been set. For example, key can be name, short description, personality traits, physical appearance, likes, dislikes, etc.",
-    //         },
-    //         value: {
-    //           type: "string",
-    //           description:
-    //             "This is the value of the detail which the author is finalizing. For example, if the key is name, then the value can be John Doe if author has decided that.",
-    //         },
-    //       },
-    //     },
-    //   },
-    //   {
-    //     name: "getRandomName",
-    //     description:
-    //       "Generates a random name based on optional gender and nationality",
-    //     parameters: {
-    //       type: "object",
-    //       properties: {
-    //         gender: {
-    //           type: "string",
-    //           enum: ["male", "female"],
-    //           description: "The gender for which to generate a name.",
-    //         },
-    //         nat: {
-    //           type: "string",
-    //           description:
-    //             "The nationality based on which to generate a name. Example: IN for India, US for United States of America or USA and so on.",
-    //         },
-    //       },
-    //     },
-    //   },
-    //   {
-    //     name: "getCharacterInspiration",
-    //     description:
-    //       "Provides character inspiration based on a given query provided by the author.",
-    //     parameters: {
-    //       type: "object",
-    //       properties: {
-    //         inspiration: {
-    //           type: "string",
-    //           description:
-    //             "Based on the user query, this defines the inspiration that the author is looking for. It could be some kind of similarity or something else as well. It should be detailed.",
-    //         },
-    //       },
-    //     },
-    //   },
-    // ],
+    messages: [
+      {
+        role: "system",
+        content:"Keep your answers extremely terse."
+      },
+    ],
   },
   voice: {
     provider: "11labs",
-    voiceId: "ryan",
+    voiceId: "",
+
   },
-    firstMessage: "Hi. I'm Grocky, powered by mixtral, running on Groq. Ask me anything.",
-};
+  firstMessage: "Hi. I'm a mixtral AI bot, running on Groq. Ask me anything.",
+  hipaaEnabled: true,
+  }

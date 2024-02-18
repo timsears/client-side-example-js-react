@@ -15,9 +15,9 @@ export const characterAssistant: CreateAssistantDTO = {
   },
   voice: {
     provider: "11labs",
-    voiceId: "",
+    voiceId: "paula",
 
   },
-  firstMessage: "Hi. I'm a mixtral AI bot, running on Groq. Ask me anything.",
+    firstMessage: ",,,Hi. I'm an AI bot, running on Grok. You can ask me anything.",
   hipaaEnabled: true,
   }

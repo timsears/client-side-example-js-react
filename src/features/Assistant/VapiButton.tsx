@@ -27,7 +27,7 @@ const VapiButton = ({
       ) : callStatus === CALL_STATUS.LOADING ? (
         <Loader2 className="animate-spin" />
       ) : (
-        "Play"
+        "Start"
       )}
     </button>
   );

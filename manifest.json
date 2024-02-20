@@ -1,7 +1,7 @@
 {
   "name": "GroqMessage",
   "short_name": "GroqMessage",
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#FFF5F5F5",
   "theme_color": "#FFF55036",

@@ -3,7 +3,8 @@ import { CreateAssistantDTO } from "@vapi-ai/web/dist/api";
 export const characterAssistant: CreateAssistantDTO = {
   name: "Mary",
   model: {
-    provider: "groq",
+    provider: "custom-llm",
+      url: "https://custom-llm-for-leap.vercel.app"
     model: "mixtral-8x7b-32768",
     temperature: 0.7,
     messages: [
@@ -59,6 +60,6 @@ As a voice assistant for Grock, you are tasked with providing concise, informati
     voiceId: "paula",
 
   },
-    firstMessage: ",,,Hi. I'm an AI bot, running on Grok. You can ask me anything.",
+    firstMessage: "Hi. I'm an AI bot, running on Grok. Speak to me in Arabic or English",
   hipaaEnabled: true,
   }

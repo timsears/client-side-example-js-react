@@ -43,7 +43,7 @@ export const characterAssistant: CreateAssistantDTO = {
         "mode": "transcribe",
         "model": "whisper",
         "language": "ar",
-        "provider": "talkscriber" as any
+        "provider": "talkscriber"
     } as any
 ,
     firstMessage: "مرحباً، أنا جروك. يمكنك التحدث معي كما لو كنت شخصًا. كيف يمكنني مساعدتك اليوم؟",

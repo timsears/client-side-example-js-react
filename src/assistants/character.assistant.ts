@@ -44,7 +44,7 @@ export const characterAssistant: CreateAssistantDTO = {
         "model": "whisper",
         "language": "ar",
         "provider": "talkscriber" as any
-    } as DeepGramTranscriber
+    } as any
 ,
     firstMessage: "مرحباً، أنا جروك. يمكنك التحدث معي كما لو كنت شخصًا. كيف يمكنني مساعدتك اليوم؟",
   // hipaaEnabled: true,

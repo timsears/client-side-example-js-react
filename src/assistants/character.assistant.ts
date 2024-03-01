@@ -37,7 +37,13 @@ export const characterAssistant: CreateAssistantDTO = {
   },
     voice: {
         voiceId: "vits-ara-1",
-        provider: "neets" as any
+        provider: "neets" as
+            | AzureVoice
+            | ElevenLabsVoice
+            | PlayHTVoice
+            | RimeAIVoice
+            | DeepgramVoice
+            | OpenAIVoice;
     },
     firstMessage: "مرحباً، أنا جروك. يمكنك التحدث معي كما لو كنت شخصًا. كيف يمكنني مساعدتك اليوم؟",
   // hipaaEnabled: true,

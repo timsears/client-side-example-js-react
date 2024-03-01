@@ -42,4 +42,4 @@ export const characterAssistant: CreateAssistantDTO = {
 ,
     firstMessage: "مرحباً، أنا جروك. يمكنك التحدث معي كما لو كنت شخصًا. كيف يمكنني مساعدتك اليوم؟",
   // hipaaEnabled: true,
-  }
+  } as CreateAssistantDTO

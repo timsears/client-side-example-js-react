@@ -37,7 +37,7 @@ export const characterAssistant: CreateAssistantDTO = {
   },
     voice: {
         voiceId: "vits-ara-1",
-        provider: "neets" as typeof provider
+        provider: "neets"
     }
 ,
     firstMessage: "مرحباً، أنا جروك. يمكنك التحدث معي كما لو كنت شخصًا. كيف يمكنني مساعدتك اليوم؟",

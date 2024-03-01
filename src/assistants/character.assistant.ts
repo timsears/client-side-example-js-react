@@ -38,8 +38,14 @@ export const characterAssistant: CreateAssistantDTO = {
     voice: {
         voiceId: "vits-ara-1",
         provider: "neets" as any
+    },
+    "transcriber": {
+        "mode": "transcribe",
+        "model": "whisper",
+        "language": "ar",
+        "provider": "talkscriber"
     }
 ,
     firstMessage: "مرحباً، أنا جروك. يمكنك التحدث معي كما لو كنت شخصًا. كيف يمكنني مساعدتك اليوم؟",
   // hipaaEnabled: true,
-  } as CreateAssistantDTO
+  }

@@ -38,7 +38,7 @@ export const characterAssistant: CreateAssistantDTO = {
     voice: {
         voiceId: "vits-ara-1",
         provider: "neets"
-    }
+    } as OpenAIVoice
 ,
     firstMessage: "مرحباً، أنا جروك. يمكنك التحدث معي كما لو كنت شخصًا. كيف يمكنني مساعدتك اليوم؟",
   // hipaaEnabled: true,

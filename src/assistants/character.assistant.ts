@@ -37,17 +37,18 @@ DO NOT GO OVER FOUR SENTENCES.
       },
     ],
   },
-    voice: {
-        "voiceId": "matilda",
-        "provider": "11labs",
-        "model": "eleven_multilingual_v2",
-    } as any ,
     // voice: {
-    //     voiceId: "vits-ara-1",
-    //     provider: "neets" as any
-    // },
+    //     "voiceId": "matildaSHould",
+    //     "provider": "11labs",
+    //     "model": "eleven_multilingual_v2",
+    // } as any ,
+    voice: {
+        voiceId: "vits-ara-1",
+        provider: "neets" as any
+    },
     "transcriber": {
-        "mode": "transcribe",
+        //"mode": "transcribe",
+        "mode": "translate",
         "model": "whisper",
         "language": "ar",
         "provider": "talkscriber"

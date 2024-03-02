@@ -38,7 +38,7 @@ DO NOT GO OVER FOUR SENTENCES.
     ],
   },
     voice: {
-        "voiceId": "Emily",
+        "voiceId": "matilda",
         "provider": "11labs",
         "model": "eleven_multilingual_v2",
     } as any ,

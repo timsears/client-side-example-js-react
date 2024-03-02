@@ -38,9 +38,14 @@ DO NOT GO OVER FOUR SENTENCES.
     ],
   },
     voice: {
-        voiceId: "vits-ara-1",
-        provider: "neets" as any
-    },
+        "voiceId": "Emily",
+        "provider": "11labs",
+        "model": "eleven_multilingual_v2",
+    } ,
+    // voice: {
+    //     voiceId: "vits-ara-1",
+    //     provider: "neets" as any
+    // },
     "transcriber": {
         "mode": "transcribe",
         "model": "whisper",
@@ -49,6 +54,5 @@ DO NOT GO OVER FOUR SENTENCES.
     } as any
 ,
     firstMessage: "مرحباً، أنا جروك. يمكنك التحدث معي كما لو كنت شخصًا. كيف يمكنني مساعدتك اليوم؟",
-    silenceTimeo
   // hipaaEnabled: true,
   }

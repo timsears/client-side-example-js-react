@@ -41,7 +41,7 @@ DO NOT GO OVER FOUR SENTENCES.
         "voiceId": "Emily",
         "provider": "11labs",
         "model": "eleven_multilingual_v2",
-    } ,
+    } as any ,
     // voice: {
     //     voiceId: "vits-ara-1",
     //     provider: "neets" as any

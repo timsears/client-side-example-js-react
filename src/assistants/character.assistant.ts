@@ -47,8 +47,8 @@ DO NOT GO OVER FOUR SENTENCES.
     //     provider: "neets" as any
     // },
     "transcriber": {
-        "mode": "transcribe",
-        //"mode": "translate",
+        // "mode": "transcribe",
+        "mode": "translate",
         "model": "whisper",
         "language": "ar",
         "provider": "talkscriber"

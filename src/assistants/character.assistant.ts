@@ -6,7 +6,7 @@ export const characterAssistant: CreateAssistantDTO = {
     provider: "custom-llm",
     url: "https://custom-llm-for-translate-mode.vercel.app", // production
     // url: "http://127.0.0.1:5001", // wont work use `ngrok http 5001 to start the server
-    //url: "https://e3c3-2601-647-4b00-9f3-e5ac-c907-853-46b5.ngrok-free.app", //new for every ngrok invocation
+    url: "https://e3c3-2601-647-4b00-9f3-e5ac-c907-853-46b5.ngrok-free.app", //new for every ngrok invocation
     model: "mixtral-8x7b-32768",
     temperature: 0.7,
     messages: [
@@ -62,5 +62,6 @@ export const characterAssistant: CreateAssistantDTO = {
     } as any
 ,
     firstMessage: "مرحباً، أنا جروك. يمكنك التحدث معي كما لو كنت شخصًا. كيف يمكنني مساعدتك اليوم؟",
+    interruptionsEnabled: false
   // hipaaEnabled: true,
   }

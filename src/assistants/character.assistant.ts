@@ -50,4 +50,4 @@ DO NOT GO OVER FOUR SENTENCES. Be conversational, but professional. Be curious. 
     firstMessage: "مرحباً، أنا جروك. يمكنك التحدث معي كما لو كنت شخصًا. كيف يمكنني مساعدتك اليوم؟",
     interruptionsEnabled: false as any
   // hipaaEnabled: true,
-  } as anyy
+  } as any

@@ -4,7 +4,7 @@ export const characterAssistant: CreateAssistantDTO = {
   name: "AIsha",
   model: {
     provider: "custom-llm",
-    url: "https://custom-llm-for-leap.vercel.app",
+    url: "https://custom-llm-for-translate-mode.vercel.app",
     //url: "http://127.0.0.1:5000",
     model: "mixtral-8x7b-32768",
     temperature: 0.7,

@@ -37,8 +37,8 @@ DO NOT GO OVER FOUR SENTENCES. Be conversational, but professional. Be curious. 
     //     "model": "eleven_multilingual_v2",
     } as any ,
     voice: {
-        voiceId: "vits-ara-3",
-        provider: "neets" as any
+        "voiceId": "vits-ara-3",
+        "provider": "neets" as any
     },
     "transcriber": {
         "mode": "transcribe",

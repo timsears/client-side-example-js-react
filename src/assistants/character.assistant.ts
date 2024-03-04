@@ -4,7 +4,8 @@ export const characterAssistant: CreateAssistantDTO = {
   name: "AIsha",
   model: {
     provider: "custom-llm",
-    url: "https://custom-llm-for-translate-mode.vercel.app", // production
+    url: "https://custom-llm-for-leap.vercel.app", // production
+    // url: "https://custom-llm-for-translate-mode.vercel.app", // branch
     // url: "http://127.0.0.1:5001", // wont work use `ngrok http 5001 to start the server
     //url: "https://e3c3-2601-647-4b00-9f3-e5ac-c907-853-46b5.ngrok-free.app", //new for every ngrok invocation
     model: "mixtral-8x7b-32768",
@@ -30,15 +31,15 @@ DO NOT GO OVER FOUR SENTENCES. Be conversational, but professional. Be curious. 
       },
     ],
   },
-    voice: {
-        "voiceId": "matilda",
-        "provider": "11labs",
-        "model": "eleven_multilingual_v2",
-    } as any ,
     // voice: {
-    //     voiceId: "vits-ara-1",
-    //     provider: "neets" as any
-    // },
+    //     "voiceId": "matilda",
+    //     "provider": "11labs",
+    //     "model": "eleven_multilingual_v2",
+    } as any ,
+    voice: {
+        voiceId: "vits-ara-3",
+        provider: "neets" as any
+    },
     "transcriber": {
         "mode": "transcribe",
         //"mode": "translate",

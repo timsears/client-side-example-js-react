@@ -30,9 +30,14 @@ export const characterAssistant: CreateAssistantDTO = {
       },
     ],
   },
+  // voice: {
+  //   voiceId: "vits-ara-3",
+  //   provider: "neets",
+  // },
   voice: {
-    voiceId: "vits-ara-3",
-    provider: "neets",
+      voiceId: "matilda",
+      provider: "11labs",
+      model: "eleven_multilingual_v2"
   },
   transcriber: {
     mode: "transcribe",
